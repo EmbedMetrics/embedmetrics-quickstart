@@ -3,6 +3,7 @@ import { EmbedMetricsApp } from "@embedmetrics/sdk/react";
 import { initEmbedMetrics } from "@embedmetrics/sdk";
 import config from "./config";
 import "./App.css";
+import theme from "./themes/discordTheme.ts";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -122,6 +123,7 @@ function App() {
             config={{
               header: { visible: true },
             }}
+            // theme={theme}
           />
         </div>
       </main>
